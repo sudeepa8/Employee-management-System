@@ -1,0 +1,434 @@
+/* Navbar Styling */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Container */
+nav {
+  background: linear-gradient(135deg, #9aa5f6 0%, #555 100%);
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(21, 19, 19, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Navbar List */
+nav ul {
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar List Items */
+nav ul li {
+  margin: 0 20px;
+}
+
+/* Navbar Links */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Navbar Link Hover State */
+nav ul li a:hover {
+  background-color: #fffefe;
+  color: #172ad7; /* Change text color on hover */
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  nav ul li a {
+    padding: 8px;
+  }
+}
+
+/* Login Styling */
+h1, h2 {
+  margin-top: 0;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  
+  
+
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+button {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+  
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+/* Registration Styling */
+.auth-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 10px 6px rgba(0,0,0,0.1);
+  border-radius: 50px;
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #007bff;
+  text-align: center; /* Center the text horizontally */
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button[type="submit10"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit11"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(45deg, #9f01ea, #56d8e4);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+/* Footer Styling */
+.footer {
+  background: linear-gradient(135deg, #b7b3f0 0%, #555 100%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.footer p {
+  margin: 0;
+}
+/* Page Not Found Styling */
+.not-found-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.not-found-container h2 {
+  color: #d9534f;
+  font-size: 28px;
+}
+
+.not-found-container p {
+  color: #333;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .not-found-container {
+    padding: 10px;
+  }
+}
+/* User Management Page Styling */
+.user-management-container {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, #b7e4f7);
+  border: 1px solid #948a8a;
+  border-radius: 100px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-management-container h2 {
+  text-align: center;
+  color: #333333;
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
+
+th {
+  background-color: #f1f1f1;
+  color: #333;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #e9ecef;
+}
+
+.reg-button, .reg1-button, .delete-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reg-button {
+  background: linear-gradient(135deg, #d3c1df, #29a9d8);
+}
+
+.reg1-button {
+  background: linear-gradient(135deg, #8081f5, #9ab1eb);
+}
+
+.delete-button {
+  background: linear-gradient(135deg, #c4cbd5, #ef5c5c);
+}
+
+.reg-button:hover, .reg1-button:hover, .delete-button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Page Styling */
+.profile-page-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures child elements are contained */
+}
+
+.profile-page-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.profile-page-container p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.profile-page-container .profile-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-page-container .profile-header img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-page-container .profile-header h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #007bff;
+}
+
+.profile-page-container .profile-header span {
+  display: block;
+  font-size: 16px;
+  color: #888;
+}
+
+.profile-page-container button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profile-page-container button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.profile-page-container button:active {
+  background-color: #020c18;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .profile-page-container {
+    padding: 20px;
+  }
+
+  .profile-page-container .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-page-container .profile-header img {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
